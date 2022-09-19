@@ -1,7 +1,6 @@
 .form{
   display: flex;
   justify-content: center;
-  width: 95%;
   &__col{
     flex:1;
     margin-right: 50px;
@@ -15,7 +14,7 @@
   }
   &__block{
     flex: 1;
-    margin-right: 44px;
+    margin-right: 20px;
     &:last-child{
       margin-right: 0;
     }
@@ -23,7 +22,7 @@
   &__input{
     width: 100%;
     border: none;
-    padding: 18px 11px;
+    padding: 18px 0px;
     border: solid 3px transparent;
     border-radius: 5px;
     &:focus{

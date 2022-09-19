@@ -1,4 +1,8 @@
 .footer{
+  &__container{
+    padding-left: 81px;
+    width: 940px;
+  }
   &__address{
     display:flex;
     flex-direction: column;

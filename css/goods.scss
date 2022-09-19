@@ -1,9 +1,10 @@
 .goods{
   background-color: #F8FAF9;
-  margin-left: -59px;
-  padding-left: 40px;
-  padding-right: 15px;
+  height: 100vh;
+  min-height: 650px;
   &__container{
+    padding-left: 81px;
+    width: 940px;
     display: flex;
     align-items: center;
     background-color: #F8FAF9;

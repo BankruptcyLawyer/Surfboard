@@ -1,4 +1,10 @@
 .location{
+  height: 100vh;
+  min-height: 650px;
+  &__container{
+    padding-left: 81px;
+    width: 940px;
+  }
   &__img{
     width:100%;
   }

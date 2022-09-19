@@ -1,0 +1,14 @@
+.order{
+  background: $grey;
+  padding-bottom: 69px;
+  &__title{
+    margin-top: 145px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 49px;
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+  }
+}

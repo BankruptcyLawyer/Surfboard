@@ -1,0 +1,15 @@
+.menu{
+  display: none;
+  position: relative;
+    margin-top: 139px;
+  &__container{
+    margin-left: -40px;
+    display: flex;
+  }
+  &__background{
+    max-height: 652px;
+  }
+  &__list{
+    display:flex;
+  }
+}

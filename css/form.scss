@@ -1,0 +1,44 @@
+.form{
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  &__col{
+    flex:1;
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__row{
+    display: flex;
+    margin-bottom: 18px;
+  }
+  &__block{
+    flex: 1;
+    margin-right: 44px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__input{
+    width: 100%;
+    border: none;
+    padding: 18px 11px;
+    border: solid 3px transparent;
+    border-radius: 5px;
+    &:focus{
+      border-color: $orange;
+      outline: none;
+    }
+    &--textarea{
+      height: 180px;
+      resize: none;
+    }
+  }
+  &__controls{
+    display: flex;
+  }
+  &__buttons{
+    margin-top: 40px;
+  }
+}

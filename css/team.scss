@@ -1,0 +1,43 @@
+.team{
+  display: none;
+  &__title{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    margin-right: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img{
+    margin-bottom: 18px;
+  }
+  &__person{
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: #292929;
+  }
+  &__name{
+    margin-right: 5px;
+  }
+  &__triangle{
+   width: 0px;
+   height: 0px;
+   border: 5px solid transparent;
+   border-top: 5px solid #292929;
+   &:active{
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #292929;
+   }
+  }
+}

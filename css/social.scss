@@ -1,0 +1,14 @@
+.social{
+  display: flex;
+  &__item{
+    margin-right: 15px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    &:hover{
+      filter: brightness(0.1);
+    }
+  }
+}

@@ -4,8 +4,10 @@
   height: 100vh;
   min-height: 650px;
   &__container{
-    padding-left: 81px;
     width: 940px;
+    height: 100%;
+    justify-content: space-between;
+    padding: 24px 0 45px;
   }
   &__info{
     margin-top: 77px;

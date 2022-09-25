@@ -19,7 +19,9 @@
         <div class="container hello__container">
       <header class="header">
         <div class="header__logo">
-          <img src="./img/Hello/Vector.png" alt="surf board" class="header__logo-img">
+          <svg width="56" height="40" viewBox="0 0 56 40" class="header__logo-img">
+            <use xlink:href="./img/svg/sprites.svg#logo"></use>
+          </svg>
         </div>
         <nav class="navigation header__navigation">
           <ul class="navigation__list">
@@ -47,31 +49,46 @@
           </ul>
         </nav>
       <address class="address">
-        <img src="./img/Hello/phone.png" alt="" class="address__phone-img">
-        <a href="tel:+78007003030" class="address__phone">8 800 903 90 90</a>
+        <svg width="13" height="15" viewBox="0 0 13 15" class="address__phone-img">
+          <use xlink:href="./img/svg/sprites.svg#phone"></use>
+        </svg>
+        <a href="tel:+78007003030" class="address__phone header__phone">8 800 903 90 90</a>
       </address>
+      <a href="" class="hamburger">
+        <span class="hamburger__elem"></span>
+        <span class="hamburger__elem"></span>
+        <span class="hamburger__elem"></span>
+      </a>
       </header>
+      <div class="hello__info">
           <div class="title hello__title">
             <div class="title"><h1>ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1></div>
           </div>
           <div class="title hello__subtitle">
             <div class="title"><h4>Самый большой выбор серфбордов в мире</h4></div>
         </div>
+      </div>
         <div class="hello__button">
         <a href="#" class="button">ЗАКАЗАТЬ</a>
         </div>
         <div class="hello__info">
           <ul class="features">
             <li class="features__item">
-              <img src="./img/Hello/board.png" alt="" class="features__item-img">
+              <svg width="35" height="35" viewBox="0 0 35 35" class="features__item-img">
+                <use xlink:href="./img/svg/sprites.svg#board"></use>
+              </svg>
               <div class="features__item-text">Уникальный дизайн</div>
             </li>
             <li class="features__item">
-              <img src="./img/Hello/saw.png" alt="" class="features__item-img">
+              <svg width="35" height="35" viewBox="0 0 35 35" class="features__item-img">
+                <use xlink:href="./img/svg/sprites.svg#saw"></use>
+              </svg>
               <div class="features__item-text">Прочные материалы</div>
             </li>
             <li class="features__item">
-              <img src="./img/Hello/truck.png" alt="" class="features__item-img">
+              <svg width="35" height="25" viewBox="0 0 35 25" class="features__item-img">
+                <use xlink:href="./img/svg/sprites.svg#truck"></use>
+              </svg>
               <div class="features__item-text">Быстрая доставка</div>
             </li>
           </ul>
@@ -92,7 +109,9 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img src="./img/Hello/perfect_fit.png" alt="" class="benefit__icon">
+                    <svg width="44" height="68" viewBox="0 0 44 68" class="benefit__icon">
+                      <use xlink:href="./img/svg/sprites.svg#perfect_fit"></use>
+                    </svg>
                   </div>
               </div>
               <div class="benefit__text">
@@ -103,7 +122,9 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img src="./img/Hello/strong.png" alt="" class="benefit__icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" class="benefit__icon">
+                      <use xlink:href="./img/svg/sprites.svg#strong"></use>
+                    </svg>
                   </div>
               </div>
               <div class="title benefit__text">
@@ -114,7 +135,9 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <img src="./img/Hello/unique.png" alt="" class="benefit__icon">
+                    <svg width="68" height="68" viewBox="0 0 68 68" class="benefit__icon">
+                      <use xlink:href="./img/svg/sprites.svg#unique"></use>
+                    </svg>
                   </div>
               </div>
               <div class="benefit__text">
@@ -125,99 +148,6 @@
             </ul>
           </div>
         </section>
-        <section class="section goods">
-          <div class="container goods__container">
-            <div class="goods__content">
-              <a href="#" class="goods__arrow"><img src="./img/Hello/arrow_left.png" alt=""></a>
-            <div class="goods__product">
-            <img src="./img/Hello/longboard.png" alt="" class="goods__img">
-            <img src="./img/Hello/goods_background.png" alt="" class="goods__background">
-            </div>
-            <div class="goods__info">
-              <div class="goods__parameters">
-              <img src="./img/Hello/parameters.png" alt="" class="goods__parameters-img">
-              <div class="goods__parameters-text">ПАРАМЕТРЫ</div>
-              </div>
-              <div class="title goods__title">
-                <div class="title title--black"><h2>Лонгборд 2.0</h2></div>
-              </div>
-              <div class="goods__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-              <ul class="goods__size">
-                <li class="goods__item">
-                  <div class="goods__board-size">Длина доски</div>
-                  <div class="goods__value">от 2,5 метров</div>
-                </li>
-                <li class="goods__item">
-                  <div class="goods__board-size">Ширина доски</div>
-                  <div class="goods__value">от 40 сантиметров</div>
-                </li>
-              </ul>
-              <div class="goods__order">
-                <div class="title goods__price">
-                  <div class="title"><h6>7000 ₽</h6></div>
-                </div>
-                <div class="goods__button">
-              <a href="#" class="button">ЗАКАЗАТЬ</a>
-            </div>
-            </div>
-            </div>
-            <a href="#" class="goods__arrow"><img src="./img/Hello/arrow_right.png" alt=""></a>
-          </div>
-        </div>
-        </section>
-        <!-- <section class="team">
-          <div class="container team__container">
-            <div class="team__title">
-              <h2>КОМАНДА</h2>
-            </div>
-            <ul class="team__list">
-              <li class="team__item">
-                <img src="" alt="" class="team__img">
-                <div class="team__person">
-                  <div class="team__name">Борис Федорович</div>
-                  <a href="" class="team__triangle">#</a>
-                </div>
-              </li>
-              <li class="team__item">
-                <img src="" alt="" class="team__img">
-                <div class="team__person">
-                  <div class="team__name">Ольга Невзорова</div>
-                  <a href="" class="team__triangle">#</a>
-                </div>
-              </li>
-              <li class="team__item">
-                <img src="" alt="" class="team__img">
-                <div class="team__person">
-                  <div class="team__name">Ингвар Нильсон</div>
-                  <a href="" class="team__triangle">#</a>
-                </div>
-              </li>
-              <li class="team__item">
-                <img src="" alt="" class="team__img">
-                <div class="team__person">
-                  <div class="team__name">Екатерина Иванова</div>
-                  <a href="" class="team__triangle">#</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section> -->
-        <!-- <section class="section menu">
-          <div class="container menu__container">
-              <img src="./img/Hello/Slider.png" alt="" class="menu__background">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <img src="./img/Hello/menu_longboard.png" alt="" class="menu__img">
-              </li>
-              <li class="menu__item">
-                <img src="./img/Hello/menu_shortboard.png" alt="" class="menu__img">
-              </li>
-              <li class="menu__item">
-                <img src="./img/Hello/menu_softtop.png" alt="" class="menu__img">
-              </li>
-            </ul>
-        </div>
-        </section> -->
         <section class="section reviews">
           <div class="container reviews__container">
             <div class="title reviews__title">
@@ -250,40 +180,6 @@
           </div>
           </div>
         </section>
-        <!-- <section class="section presentation">
-          <div class="container presentation__container">
-            <div class="presentation__content">
-            <div class="presentation__title">
-              <h2>КАК МЫ РАБОТАЕМ</h2>
-            </div>
-            <div class="presentation__main">
-            <img src="./img/Hello/presentation.png" alt="" class="presentation__video">
-            <img src="./img/Hello/center_play.png" alt="" class="presentation__play">
-          </div>
-          <div class="presentation__scale">
-            <img src="./img/Hello/play.png" alt="" class="presentation__background-scale">
-            <div class="presentation__settings">
-            <div class="presentation__elems">
-              <div class="presentation__video-play">
-            <img src="./img/Hello/smaller_play.png" alt="" class="presentation__elem">
-            </div>
-            <div class="presentation__video-reg">
-            <img src="./img/Hello/orange_scale.png" alt="" class="presentation__elem presentation__elem--orange-scale">
-            <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
-            <img src="./img/Hello/grey_scale.png" alt="" class="presentation__elem presentation__elem--grey-scale">
-            </div>
-            <div class="presentation__video-vol">
-              <img src="./img/Hello/volume_symb.png" alt="" class="presentation__elem">
-              <img src="./img/Hello/volume_orange_scale.png" alt="" class="presentation__elem presentation__elem--small-orange-scale">
-              <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
-              <img src="./img/Hello/volume_grey_scale.png" alt="" class="presentation__elem presentation__elem--small-grey-scale">
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-          </div>
-        </section> -->
         <section class="section order">
           <img src="./img/Hello/order_background.jfif" alt="" class="order__background">
           <div class="container order__container">
@@ -369,27 +265,40 @@
             <div class="footer__items">
             <address class="address footer__address">
               <div class="address__place">Москва, ул. Новый Арбат, д. 31/12</div>
+              <div class="address__phone-number">
+              <svg width="13" height="15" viewBox="0 0 13 15" class="address__phone-img address__phone-img--black">
+                <use xlink:href="./img/svg/sprites.svg#phone"></use>
+              </svg>
               <a href="tel:+78007003030" class="address__phone">8 800 903 90 90</a>
+            </div>
             </address>
             <ul class="social">
               <li class="social__item">
                 <a href="./img/Hello/vk.png" class="social__link social__link--vk">
-                  <img src="./img/Hello/vk.png" alt="" class="social__img">
+                  <svg width="20" height="12" viewBox="0 0 20 12" class="social__img">
+                    <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link social__link--fb">
-                  <img src="./img/Hello/fb.png" alt="" class="social__img">
+                  <svg width="20" height="20" viewBox="0 0 20 20" class="social__img">
+                    <use xlink:href="./img/svg/sprites.svg#fb"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./img/Hello/inst.png" class="social__link social__link--inst">
-                  <img src="./img/Hello/inst.png" alt="" class="social__img">
+                  <svg width="20" height="20" viewBox="0 0 20 20" class="social__img">
+                    <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="./img/Hello/tw.png" class="social__link social__link--tw">
-                  <img src="./img/Hello/tw.png" alt="" class="social__img">
+                  <svg width="20" height="18" viewBox="0 0 20 18" class="social__img">
+                    <use xlink:href="./img/svg/sprites.svg#tw"></use>
+                  </svg>
                 </a>
               </li>
               </ul>

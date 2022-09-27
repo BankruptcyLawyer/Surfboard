@@ -1,15 +1,29 @@
 .benefits{
   display: flex;
+  @include phones{
+    flex-direction: column;
+  }
   &__item{
     flex: 1;
     padding: 0 3%;
     position: relative;
+    @include phones{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 0;
+    margin-bottom: 7%;
+    align-items: center;
+    }
     &:before{
       content: url("../img/Hello/separator.svg");
       position: absolute;
-      top: 30px;
+      top: rem(30px);
       right: 0;
       transform: translateX(50%);
+      @include tablets{
+        display: none;
+      }
     }
     &:first-child{
       padding-left: 0;

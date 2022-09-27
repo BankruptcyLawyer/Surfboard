@@ -1,16 +1,17 @@
 .reviews{
   height: 100vh;
-  min-height: 800px;;
+  min-height: rem(800px);
   &__container{
-    width: 940px;
+    width: $width;
+    max-width: rem(940px);
     height: 100%;
     justify-content: center;
-    padding: 24px 0 45px;
+    padding: rem(24px) 0 rem(45px);
   }
   &__title{
-  padding-top: 40px;
+  padding-top: rem(40px);
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: rem(26px);
   }
   &__items{
     display: flex;
@@ -21,37 +22,50 @@
     background-color: #F8FAF9;
     display: flex;
     align-items: center;
-    padding-top: 44px;
-    padding-left: 43px;
-    padding-bottom: 44px;
-    padding-right: 140px;
-    margin-bottom: 15px;
+    padding-top: rem(44px);
+    padding-left: rem(43px);
+    padding-bottom: rem(44px);
+    padding-right: rem(140px);
+    margin-bottom: rem(15px);
+    @include tablets{
+      flex-direction: column;
+      text-align: center;
+      padding: rem(44px) rem(120px);
+    }
+    @include phones{
+      padding: rem(44px) rem(20px);
+    }
   }
   &__img{
-    margin-right: 39px;
+    margin-right: rem(39px);
+    @include tablets{
+      width: rem(130px);
+      height: rem(130px);
+      margin-right: 0;
+    }
   }
   &__info{
-    padding-bottom: 7px;
+    padding-bottom: rem(7px);
   }
   &__info-title{
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
     color: #292929;
     font-weight: bold;
   }
     &__text{
-      max-width: 454px;
+      max-width: rem(454px);
       line-height: 1.1;
-      margin-bottom: 32px;
+      margin-bottom: rem(32px);
     }
     &__persons{
       display: flex;
       justify-content: center;
     }
     &__person{
-      margin-right: 5px;
+      margin-right: rem(5px);
     }
     &__picture{
-      width: 74px;
-      height: 74px;
+      width: rem(74px);
+      height: rem(74px);
     }
   }

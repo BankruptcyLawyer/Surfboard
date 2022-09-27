@@ -1,16 +1,24 @@
 .footer{
-  min-height: 155px;
+  min-height: rem(155px);
   &__container{
-    width: 940px;
+    width: $width;
+    max-width: rem(940px);
   }
   &__address{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    @include phones{
+      align-items: center;
+    }
   }
   &__items{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include phones{
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }

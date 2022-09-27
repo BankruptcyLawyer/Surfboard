@@ -1,0 +1,12 @@
+.social {
+  display: flex;
+}
+.social__item {
+  margin-right: rem(15px);
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link:hover {
+  filter: brightness(0.1);
+}/*# sourceMappingURL=social.css.map */

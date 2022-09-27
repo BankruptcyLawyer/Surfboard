@@ -1,13 +1,13 @@
 .menu{
   display: none;
   position: relative;
-    margin-top: 139px;
+    margin-top: rem(139px);
   &__container{
-    margin-left: -40px;
+    margin-left: rem(-40px);
     display: flex;
   }
   &__background{
-    max-height: 652px;
+    max-height: rem(652px);
   }
   &__list{
     display:flex;

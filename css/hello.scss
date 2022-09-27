@@ -2,28 +2,63 @@
   position: relative;
   color: #ffffff;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
+  background: url('../img/Hello/background.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+    @include tablets{
+      background-position: top rem(87px) right 0px;
+      background-size: 100% 100%;
+    @include phones{
+      background-position: top rem(81px) right 0px;
+    }
+  }
   &__container{
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     height: 100%;
     justify-content: space-between;
-    padding: 24px 0 45px;
+    padding: rem(24px) 0 rem(45px);
+    @include tablets{
+      padding: 0;
+    }
   }
   &__info{
-    margin-top: 77px;
+    margin-top: rem(77px);
   }
   &__background{
     position: absolute;
     z-index: -10;
     width: 100%;
-    height: 100%
+    height: 100%;
+    @include tablets{
+      height: 89%;
+      top: rem(86px);
+    }
   }
   &__title{
-    width: 485px;
-    line-height: 1.3;
-    margin-bottom: 9px;
+    max-width: rem(485px);
+    line-height: 1.1;
+    margin-bottom: rem(9px);
+    font-size: rem(32px);
+    @include tablets{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
   }
   &__subtitle{
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
+    font-size: rem(21px);
+    @include tablets{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+  &__button{
+    @include tablets{
+      text-align: center;
+    }
   }
 }

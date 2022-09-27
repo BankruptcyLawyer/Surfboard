@@ -1,17 +1,21 @@
 .location{
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   align-items: center;
   &__container{
-    width: 940px;
+    width: $width;
+    max-width: rem(940px);
     height: 100%;
     justify-content: space-between;
-    padding: 24px 0 45px;
+    padding: rem(24px) 0;
   }
   &__img{
     width:100%;
-    height: 88%;
+    min-height: 88%;
+    @include phones{
+      min-height: 80%;
+    }
   }
 }

@@ -1,10 +1,7 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-.header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(87px);
+  padding-top: rem(24px);
+}/*# sourceMappingURL=header.css.map */

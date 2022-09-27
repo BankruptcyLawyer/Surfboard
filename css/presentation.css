@@ -1,4 +1,73 @@
+.presentation {
+  display: none;
+  background-color: #F8FAF9;
+}
 .presentation__title {
-  margin-top: 107px;
+  margin-top: rem(107px);
   text-align: center;
 }
+.presentation__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation__video {
+  margin-bottom: rem(-11px);
+}
+.presentation__main {
+  position: relative;
+}
+.presentation__play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: rem(75px);
+  height: rem(109px);
+  z-index: 10;
+}
+.presentation__scale {
+  position: relative;
+}
+.presentation__settings {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: rem(10px);
+}
+.presentation__elems {
+  display: flex;
+  align-items: center;
+}
+.presentation__elem--orange-scale {
+  width: rem(140px);
+}
+.presentation__elem--grey-scale {
+  width: rem(302px);
+}
+.presentation__elem--small-orange-scale {
+  width: rem(37px);
+}
+.presentation__elem--small-grey-scale {
+  width: rem(19px);
+  height: rem(4px);
+}
+.presentation__video-reg {
+  height: rem(36px);
+  margin-right: rem(35px);
+  display: flex;
+  align-items: center;
+}
+.presentation__video-play {
+  margin-right: rem(35px);
+}
+.presentation__video-vol {
+  display: flex;
+  align-items: center;
+}
+.presentation__video-vol:first-child {
+  margin-right: rem(15px);
+}/*# sourceMappingURL=presentation.css.map */

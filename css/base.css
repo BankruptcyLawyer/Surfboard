@@ -1,13 +1,19 @@
+html {
+  font-size: 18px;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
 body:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 body:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1,
@@ -20,14 +26,28 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: rem(48px);
+}
+
 h2 {
-  font-size: 36px;
-  font-family: "Open Sans";
+  font-size: rem(48px);
 }
 
 h3 {
-  font-size: 24px;
-  font-family: "Open Sans";
+  font-size: rem(27px);
+}
+
+h4 {
+  font-size: rem(21px);
+}
+
+h5 {
+  font-size: rem(18px);
+}
+
+h6 {
+  font-size: rem(60px);
 }
 
 ul {
@@ -42,16 +62,16 @@ a {
 }
 
 body {
-  font: 18px/1.5 "Open Sans";
-  color: #FFFFFF;
-  background: #17191C;
   margin: 0;
   position: relative;
 }
 
 .wrapper {
-  overflow: hidden;
-  width: 100%;
   min-height: 100%;
   position: relative;
+  overflow: hidden;
 }
+
+.main-content {
+  width: 100%;
+}/*# sourceMappingURL=base.css.map */

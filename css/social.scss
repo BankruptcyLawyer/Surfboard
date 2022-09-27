@@ -1,14 +1,15 @@
 .social{
   display: flex;
   &__item{
-    margin-right: 15px;
+    margin-right: rem(15px);
     &:last-child{
       margin-right: 0;
     }
   }
   &__link{
+    fill: #B3B3B3;
     &:hover{
-      filter: brightness(0.1);
+      fill: $black;
     }
   }
 }

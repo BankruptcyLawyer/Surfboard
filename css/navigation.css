@@ -1,5 +1,10 @@
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.navigation__list {
   display: flex;
+  margin-right: rem(25px);
 }
+.navigation__item {
+  margin-right: rem(22px);
+}
+.navigation__item:last-child {
+  margin-right: rem(0px);
+}/*# sourceMappingURL=navigation.css.map */

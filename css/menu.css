@@ -1,3 +1,15 @@
-.menu__title {
-  margin-top: 150px;
+.menu {
+  display: none;
+  position: relative;
+  margin-top: rem(139px);
 }
+.menu__container {
+  margin-left: rem(-40px);
+  display: flex;
+}
+.menu__background {
+  max-height: rem(652px);
+}
+.menu__list {
+  display: flex;
+}/*# sourceMappingURL=menu.css.map */

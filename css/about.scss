@@ -1,25 +1,31 @@
 .about{
-  margin-top: 99px;
   height: 100vh;
-  min-height: 550px;
+  min-height: rem(550px);
   &__container{
-    width: 940px;
+    width: $width;
+    max-width: rem(940px);
     height: 100%;
     justify-content: center;
-    padding: 24px 0 45px;
+    padding: rem(24px) 0 rem(45px);
+    @include phones{
+      width: 95%;
+      justify-content: space-around;
+    }
   }
   &__info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 46px;
+    margin-bottom: rem(46px);
   }
   &__title{
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
+    font-size: rem(32px);
   }
     &__subtitle{
-      max-width: 451px;
+      max-width: rem(451px);
+      font-size: 18px;
       line-height: 1.5;
     text-align: center;
   }
@@ -38,17 +44,17 @@
     &:before{
       content: url("../img/Hello/separator.png");
       position: absolute;
-      top: 30px;
+      top: rem(30px);
       right: 0;
     }
   }
   &__img{
-      width: 125px;
-      height: 125px;
+      width: rem(125px);
+      height: rem(125px);
       background-color: $grey;
       border-radius: 50%;
       position: relative;
-      margin-bottom: 17px;
+      margin-bottom: rem(17px);
     }
   &__item-img{
   position: absolute;
@@ -59,26 +65,26 @@
    margin: auto;
   }
   &__item-name{
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
   }
   &__item-rounds{
     display: flex;
     align-items: center;
-    padding-bottom: 134px;
+    padding-bottom: rem(134px);
   }
   &__round{
-      width: 15px;
-      height: 15px;
+      width: rem(15px);
+      height: rem(15px);
       background-color: $grey;
       border-radius: 50%;
-      margin-right: 10px;
+      margin-right: rem(10px);
       &--bigger{
-        width:20px;
-        height:20px;
+        width:rem(20px);
+        height:rem(20px);
       }
   }
     &__item-info{
-      width: 285px;
+      width: rem(285px);
       line-height: 1.3;
     }
 }

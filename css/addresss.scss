@@ -1,9 +1,32 @@
 .address{
+  flex-shrink: 0;
+  @include tablets{
+    display: none;
+  }
   display:flex;
   align-items: center;
   font-style: normal;
   &__phone{
-  font-size: 22px;
-  margin-left: 6px;
+  font-size: rem(22px);
+  margin-left: rem(6px);
+  white-space: nowrap;
+  @include phones{
+    margin-bottom: 5%;
+}
+  }
+  &__phone-img{
+    fill:#ffffff;
+    &--black{
+      fill: $black;
+    }
+  }
+  &__place{
+    @include phones{
+    margin-bottom: 5%;
+    }
+  }
+  &__phone-number{
+    display: flex;
+    align-items: center;
   }
 }

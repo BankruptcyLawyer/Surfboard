@@ -1,12 +1,16 @@
-@import 'normalize.scss';
+$tablets: 768px;
+$phones: 480px;
+@import './media.scss';
+@import './normalize.scss';
 @import './base.scss';
-@import 'container.scss';
-@import 'section.scss';
-@import 'title.scss';
+@import './container.scss';
+@import './section.scss';
+@import './title.scss';
 @import './hello.scss';
 @import './header.scss';
 @import './navigation.scss';
 @import './addresss.scss';
+@import './hamburger.scss';
 @import './button.scss';
 @import './features.scss';
 @import './about.scss';
@@ -24,3 +28,4 @@
 @import './social.scss';
 @import './location.scss';
 @import './links.scss';
+@import './media.scss';

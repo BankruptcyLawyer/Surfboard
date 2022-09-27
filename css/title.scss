@@ -1,4 +1,7 @@
 .title{
+  @include tablets{
+    text-align: center;
+  }
   &--black{
     color: $black;
   }

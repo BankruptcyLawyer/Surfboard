@@ -2,7 +2,7 @@
   display: none;
   background-color: #F8FAF9;
   &__title{
-    margin-top: 107px;
+    margin-top: rem(107px);
     text-align: center;
   }
   &__content{
@@ -11,7 +11,7 @@
     align-items: center;
   }
   &__video{
-    margin-bottom: -11px;
+    margin-bottom: rem(-11px);
   }
   &__main{
     position: relative;
@@ -23,8 +23,8 @@
     left:0;
     right:0;
     margin: auto;
-    width: 75px;
-    height: 109px;
+    width: rem(75px);
+    height: rem(109px);
     z-index: 10;
   }
   &__scale{
@@ -36,7 +36,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 10px;
+    left: rem(10px);
   }
   &__elems{
     display: flex;
@@ -44,33 +44,33 @@
   }
   &__elem{
     &--orange-scale{
-      width: 140px;
+      width: rem(140px);
     }
     &--grey-scale{
-      width: 302px;
+      width: rem(302px);
     }
     &--small-orange-scale{
-      width: 37px;
+      width: rem(37px);
     }
     &--small-grey-scale{
-      width: 19px;
-      height: 4px;
+      width: rem(19px);
+      height: rem(4px);
     }
   }
   &__video-reg{
-    height: 36px;
-    margin-right: 35px;
+    height: rem(36px);
+    margin-right: rem(35px);
     display: flex;
     align-items: center;
   }
   &__video-play{
-    margin-right: 35px;
+    margin-right: rem(35px);
   }
   &__video-vol{
     display: flex;
     align-items: center;
     &:first-child{
-      margin-right: 15px;
+      margin-right: rem(15px);
     }
   }
   }

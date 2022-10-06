@@ -1,0 +1,26 @@
+.arrow{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 100%;
+align-items: center;
+display: flex;
+justify-content: space-between;
+  @include tablets{
+    top:50%;
+    transform: translateY(-50%);
+   align-items: center;
+   display: flex;
+  }
+  &--fullscreen{
+    @include tablets{
+      display: none;
+    }
+    }
+    &--tablets{
+      display: none;
+      @include tablets{
+        display: flex;
+      }
+    }
+  }

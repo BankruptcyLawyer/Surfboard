@@ -30,4 +30,14 @@
       flex: 70%;
     }
   }
+  &__title{
+    @include phones{
+      text-align: start;
+    }
+  }
+  &__desc{
+    @include phones{
+      text-align: start;
+    }
+  }
 }

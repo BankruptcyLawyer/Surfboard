@@ -1,0 +1,35 @@
+.dropdown{
+  max-width: rem(273px);
+  width: 100%;
+  left: rem(90px);
+  top: 0px;
+  position: absolute;
+  background-color: #ECECEC;
+  border-radius: 5px;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  &__list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(15px) rem(15px);
+    font-size: rem(16px);
+    color:$black;
+    flex: 1;
+  }
+  &__parameter{
+    display: flex;
+    column-gap: rem(10px);
+    align-items: center;
+ 
+  }
+  &__svg{
+    display:flex;
+    flex-direction: column;
+  }
+}

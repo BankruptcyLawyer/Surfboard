@@ -9,7 +9,7 @@
     padding: rem(24px) 0 rem(45px);
     @include phones{
       width: 95%;
-      justify-content: space-around;
+      justify-content: center;
     }
   }
   &__info{

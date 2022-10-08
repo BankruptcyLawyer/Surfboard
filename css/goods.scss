@@ -94,6 +94,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: rem(36px);
+    &:hover .dropdown{
+      display: flex;
+      margin-left:0;
+    }
     @include tablets{
       display: none;
     }
@@ -136,10 +140,6 @@
   }
   &__drop-item{
     position: relative;
-    &:hover .dropdown{
-      opacity: 1;
-      margin-left:0;
-    }
     &::after{
       content: "";
       position: absolute;

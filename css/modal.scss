@@ -1,0 +1,29 @@
+.modal{
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: rgba(51, 53, 55, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  &__window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(50%);
+    right: 50%;
+    top: 50%;
+    max-width: rem(376px);
+    width: 100%;
+    height: rem(176px);
+    font-size: rem(26px);
+    position: absolute;
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    font-size: 18px;
+  }
+  &__message{
+    margin-bottom: rem(18px);
+  }
+}

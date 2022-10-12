@@ -1,5 +1,12 @@
 .team{
-  display: none;
+  &__container{
+    width: $width;
+    max-width: rem(940px);
+    height: 100%;
+    min-height: rem(650px);
+    justify-content: center;
+    padding: rem(24px) 0 rem(45px);
+  }
   &__title{
     margin-top: rem(60px);
     text-align: center;
@@ -7,13 +14,39 @@
   }
   &__list{
     display: flex;
+    flex: 1;
     align-items: center;
+    justify-content: center;
+    @include tablets{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &--desktop{
+      @include tablets{
+        display: none;
+      }
+    }
+    &--mobile{
+      display:none;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @include tablets{
+        display: flex;
+      }
+    }
   }
   &__item{
     margin-right: rem(21px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include tablets{
+      margin-right: 0;
+    }
   }
   &__img{
     margin-bottom: rem(18px);
@@ -24,20 +57,56 @@
     font-size: rem(21px);
     font-weight: bold;
     color: #292929;
+    @include tablets{
+      margin-bottom: rem(8px);
+      }
   }
   &__name{
-    margin-right: rem(5px);
+    display: flex;
+    align-items: center;
+    // &::after{
+    //   content: "";
+    //   background: url(../img/Hello/triangle.png) center no-repeat;
+    //   z-index: 1;
+    //   width: 9px;
+    //   height: 9px;
+    //   margin-left: rem(5px);
+    //   &:focus{
+    //     transform: rotate(180deg);
+    //   }
+    // }
   }
-  &__triangle{
-   width: rem(0px);
-   height: rem(0px);
-   border: rem(5px) solid transparent;
-   border-top: rem(5px) solid #292929;
-   &:active{
-    width: rem(0px);
-    height: rem(0px);
-    border: rem(5px) solid transparent;
-    border-bottom: rem(5px) solid #292929;
-   }
+  // &__triangle{
+  //  width: rem(0px);
+  //  height: rem(0px);
+  //  border: rem(5px) solid transparent;
+  //  border-top: rem(5px) solid #292929;
+  //  &:active{
+  //   width: rem(0px);
+  //   height: rem(0px);
+  //   border: rem(5px) solid transparent;
+  //   border-bottom: rem(5px) solid #292929;
+  //  }
+  // }
+  &__content{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    overflow: hidden;
+    height: 0;
+    @include tablets{
+      position: static;
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+  &__prof{
+    font-size: rem(18px);
+    color: $black;
+    margin-bottom: rem(4px);
+  }
+  &__desc{
+    font-size: rem(18px);
+    color: #666666;
   }
 }

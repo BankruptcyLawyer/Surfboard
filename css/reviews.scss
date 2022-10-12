@@ -60,12 +60,28 @@
     &__persons{
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     &__person{
+      max-width: rem(74px);
+      max-height: rem(74px);
       margin-right: rem(5px);
+      border-radius: 50%;
+      border: 6px solid;
+      border-color: transparent;
+      box-sizing: content-box;
     }
     &__picture{
-      width: rem(74px);
-      height: rem(74px);
+      max-width: rem(74px);
+      max-height: rem(74px);
+    }
+    &__list{
+      position: relative;
+    }
+    &__review{
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
     }
   }

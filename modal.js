@@ -37,24 +37,23 @@ $.ajax({
     to: to.val()
   },
   success: data =>{
-    content.text(data.message)
-      $.fancybox.open({
-    src: ".modal",
-    type: "inline"
-  });
+    content.text(data.message);
+    const modal = $('.modal');
+    $('.modal').css('display', 'block');
   },
   error: data =>{
     content.text('Сообщение не доставлено');
-    $.fancybox.open({
-      src: ".modal",
-      type: "inline"
-    });
+    const modal = $('.modal');
+    $('.modal').css('display', 'block');
   }
 });
 }
 });
 
-$(".button--close").click(e =>{
-  e.preventDefault();
-  frames.top.$.fancybox.close(true);
-})
+
+const closemodal = document.querySelector('.button--close');
+const overlaymodal = document.querySelector('.modal');
+closemodal.addEventListener('click', function(event) {
+  event.preventDefault();
+  overlaymodal.style.display = "none";
+});

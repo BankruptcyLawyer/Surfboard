@@ -15,9 +15,9 @@
 
 <body>
   <div class="wrapper">
+    <div class="main-content">
     <div class="container">
-      <div class="main-content">
-        <section class="section hello">
+        <section data-sidemenu-theme="white" data-section-id="hello" class="section hello">
           <div class="container hello__container">
             <header class="header">
               <div class="header__logo">
@@ -28,25 +28,25 @@
               <nav class="navigation header__navigation">
                 <ul class="navigation__list">
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">О нас</a>
+                    <a href="#" data-scroll-to="about" class="navigation__link">О нас</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Серфборды</a>
+                    <a href="#" data-scroll-to="goods" class="navigation__link">Серфборды</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Команда</a>
+                    <a href="#" data-scroll-to="team" class="navigation__link">Команда</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Меню</a>
+                    <a href="#" data-scroll-to="menu" class="navigation__link">Меню</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Отзывы</a>
+                    <a href="#" data-scroll-to="reviews" class="navigation__link">Отзывы</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Как мы работаем</a>
+                    <a href="#" data-scroll-to="presentation" class="navigation__link">Как мы работаем</a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">Контакты</a>
+                    <a href="#" data-scroll-to="location" class="navigation__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -75,7 +75,7 @@
               </div>
             </div>
             <div class="hello__button">
-              <a href="#" class="button">ЗАКАЗАТЬ</a>
+              <a href="#" data-scroll-to="order" class="button">ЗАКАЗАТЬ</a>
             </div>
             <div class="hello__info">
               <ul class="features">
@@ -101,7 +101,7 @@
             </div>
           </div>
         </section>
-        <section class="section about">
+        <section data-sidemenu-theme="black" data-section-id="about" class="section about">
           <div class="container about__container">
             <div class="about__info">
               <div class="title about__title">
@@ -173,7 +173,7 @@
             </ul>
           </div>
         </section>
-        <section class="section goods">
+        <section data-sidemenu-theme="black" data-section-id="goods" class="section goods">
           <div class="container goods__container">
             <ul class="goods__list" id="slider">
               <li class="goods__elem">
@@ -385,7 +385,7 @@
             </div>
           </div>
         </section>
-                <section class="section team">
+        <section data-sidemenu-theme="black" data-section-id="team" class="section team">
           <div class="container team__container">
             <div class="team__title">
               <h2>КОМАНДА</h2>
@@ -507,7 +507,50 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews">
+        <section data-sidemenu-theme="white"data-section-id="menu" class="section menu">
+          <div class="container menu__container">
+            <div class="menu__background">
+              <img src="./img/Hello/slider.jfif" alt="" class="menu__background-img">
+              <div class="title menu__title">
+                <h2>МЕНЮ</h2>
+              </div>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__item-link">
+                  <div class="menu__img-wrapper">
+                <img src="./img/Hello/menu_longboard.jfif" alt="" class="menu__img">
+              </div>
+              <div class="menu__item-name">
+                <h2>Лонгборды</h2></div>
+              </a>
+              <div class="menu__content">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+              </div>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__item-link">
+                  <div class="menu__img-wrapper">
+                <img src="./img/Hello/menu_shortboard.jfif" alt="" class="menu__img">
+              </div>
+              <div class="menu__item-name">
+                <h2>Шортборды</h2></div>
+              </a>
+              <div class="menu__content">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+              </div>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__item-link">
+                <img src="./img/Hello/menu_softtop.jfif" alt="" class="menu__img">
+                <div class="menu__item-name">
+                  <h2>Софттопы</h2></div>
+              </a>
+              <div class="menu__content">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+              </div>
+              </li>
+            </ul>
+        </div>
+        </section>
+        <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews">
           <div class="container reviews__container">
             <div class="title reviews__title">
               <div class="title title--black">
@@ -597,9 +640,71 @@
                   </ul>
                 </div>
             </ul>
+
+        </section>
+        <section data-sidemenu-theme="black" data-section-id="presentation" class="section presentation">
+          <div class="container presentation__container">
+            <div class="presentation__content">
+            <div class="presentation__title">
+              <h2>КАК МЫ РАБОТАЕМ</h2>
+            </div>
+            <div class="presentation__main">
+              <div class="presentaition__active"></div>
+              <div class="presentaition__video"></div>
+              <div class="presentation__youtube"></div>
+              <div class="presentation__scale">
+                <img src="./img/Hello/play.png" alt="" class="presentation__background-scale">
+                <div class="presentation__settings">
+                <div class="presentation__elems">
+                  <div class="presentation__video-play">
+                    <button class="presentation__start">
+                <img src="./img/Hello/smaller_play.png" alt="" class="presentation__elem">
+              </button>
+                </div>
+                <div class="presentation__video-reg">
+                <img src="./img/Hello/orange_scale.png" alt="" class="presentation__elem presentation__elem--orange-scale">
+                <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
+                <img src="./img/Hello/grey_scale.png" alt="" class="presentation__elem presentation__elem--grey-scale">
+                </div>
+                <div class="presentation__video-vol">
+                  <img src="./img/Hello/volume_symb.png" alt="" class="presentation__elem">
+                  <img src="./img/Hello/volume_orange_scale.png" alt="" class="presentation__elem presentation__elem--small-orange-scale">
+                  <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
+                  <img src="./img/Hello/volume_grey_scale.png" alt="" class="presentation__elem presentation__elem--small-grey-scale">
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+
+            <!-- <img src="./img/Hello/presentation.png" alt="" class="presentation__video">
+            <img src="./img/Hello/center_play.png" alt="" class="presentation__play"> -->
+          </div>
+          <!-- <div class="presentation__scale">
+            <img src="./img/Hello/play.png" alt="" class="presentation__background-scale">
+            <div class="presentation__settings">
+            <div class="presentation__elems">
+              <div class="presentation__video-play">
+            <img src="./img/Hello/smaller_play.png" alt="" class="presentation__elem">
+            </div>
+            <div class="presentation__video-reg">
+            <img src="./img/Hello/orange_scale.png" alt="" class="presentation__elem presentation__elem--orange-scale">
+            <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
+            <img src="./img/Hello/grey_scale.png" alt="" class="presentation__elem presentation__elem--grey-scale">
+            </div>
+            <div class="presentation__video-vol">
+              <img src="./img/Hello/volume_symb.png" alt="" class="presentation__elem">
+              <img src="./img/Hello/volume_orange_scale.png" alt="" class="presentation__elem presentation__elem--small-orange-scale">
+              <img src="./img/Hello/volume_reg.png" alt="" class="presentation__elem">
+              <img src="./img/Hello/volume_grey_scale.png" alt="" class="presentation__elem presentation__elem--small-grey-scale">
+            </div>
+          </div>
+        </div>
+      </div> -->
+        </div>
           </div>
         </section>
-        <section class="section order">
+        <section data-sidemenu-theme="white" data-section-id="order" class="section order">
           <div class="container order__container">
             <div class="title order__title">
               <div class="title">
@@ -678,8 +783,8 @@
             </form>
           </div>
         </section>
-        <section class="section location">
-          <img src="./img/Hello/map.png" alt="Yandex" class="location__img">
+        <section data-sidemenu-theme="black" data-section-id="location" class="section location">
+          <div id="map" class="location__img"></div>
           <div class="container location__container">
             <footer class="footer">
 
@@ -730,37 +835,39 @@
           </div>
         </section>
       </div>
+      </div>
     </div>
   </div>
   </div>
   <nav class="links">
     <ul class="links__list">
       <li class="links__item links__item--active">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="hello" class="links__link">
+        </a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="about" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="goods" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="team" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="menu" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="reviews" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="presentation" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="order" class="links__link"></a>
       </li>
       <li class="links__item">
-        <a href="#" class="links__link"></a>
+        <a href="#" data-scroll-to="location" class="links__link"></a>
       </li>
     </ul>
   </nav>
@@ -804,13 +911,18 @@
   </div>
   <script src="./jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> -->
   <script src="./slider.js"></script>
   <script src="./menu.js"></script>
   <script src="./reviews.js"></script>
   <script src="./accordeon.js"></script>
   <script src="./modal.js"></script>
   <script src="./form.js"></script>
+  <script src="./menu-accordeon.js"></script>
+  <script src="./ops.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./player.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="./map.js"></script>
 </body>
 
 </html>

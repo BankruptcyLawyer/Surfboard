@@ -1202,10 +1202,9 @@ body {
   height: 100vh;
   display: flex;
   overflow: hidden;
-  margin-right: -0.1111111111rem;
 }
 .menu__item-link {
-  width: 5.6666666667rem;
+  width: 5.5555555556rem;
   position: relative;
   overflow: hidden;
 }
@@ -1344,8 +1343,14 @@ body {
   justify-content: center;
   padding: 0 0 2.5rem;
 }
+.presentation__start {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-right: 0.8333333333rem;
+}
 .presentation__title {
-  margin-top: 5.9444444444rem;
+  margin-bottom: 2.7777777778rem;
   text-align: center;
 }
 .presentation__content {
@@ -1358,6 +1363,7 @@ body {
 }
 .presentation__main {
   position: relative;
+  z-index: 100;
 }
 .presentation__play {
   position: absolute;
@@ -1385,34 +1391,79 @@ body {
   display: flex;
   align-items: center;
 }
-.presentation__elem--orange-scale {
-  width: 7.7777777778rem;
-}
-.presentation__elem--grey-scale {
-  width: 16.7777777778rem;
-}
-.presentation__elem--small-orange-scale {
-  width: 2.0555555556rem;
-}
-.presentation__elem--small-grey-scale {
-  width: 1.0555555556rem;
-  height: 0.2222222222rem;
-}
 .presentation__video-reg {
   height: 2rem;
-  margin-right: 1.9444444444rem;
+  margin-right: 2.2222222222rem;
   display: flex;
   align-items: center;
+  width: 24.7777777778rem;
+  position: relative;
+}
+.presentation__video-reg:before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  display: block;
+  transform: translateY(-50%);
 }
 .presentation__video-play {
-  margin-right: 1.9444444444rem;
+  margin-right: 0.6111111111rem;
 }
 .presentation__video-vol {
   display: flex;
   align-items: center;
+  gap: 0.8333333333rem;
 }
 .presentation__video-vol:first-child {
   margin-right: 0.8333333333rem;
+}
+.presentation__volume-track {
+  display: flex;
+  height: 2rem;
+  margin-right: 2.2222222222rem;
+  display: flex;
+  align-items: center;
+  width: 4.1111111111rem;
+  position: relative;
+}
+.presentation__volume-track:before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  display: block;
+  transform: translateY(-50%);
+}
+.presentation__regulator {
+  background-color: #FEDB3F;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.presentation__vol-regulator {
+  background-color: #FEDB3F;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
 }
 
 .order {

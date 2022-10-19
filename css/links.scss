@@ -6,11 +6,14 @@
   top: 30%;
   right: 3%;
   z-index: 100;
+  color: $white;
   &__item{
     margin-bottom: rem(5px);
+    color: inherit;
     &--active{
       .links__link{
-        border-color: #ffffff;
+        border-color: inherit;
+        color: inherit;
       }
     }
     }
@@ -21,17 +24,21 @@
       border: rem(1px) solid transparent;
       display: block;
       position: relative;
+      color: inherit;
       &:before{
-        content:"";
+        content: "";
         display: block;
         width: rem(6px);
         height: rem(6px);
         border-radius: 50%;
-        background: $white;
+        background-color: currentColor;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      }
+    &--black{
+      color: $black;
     }
 }

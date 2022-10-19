@@ -1,15 +1,76 @@
 .menu{
-  display: none;
+  display: flex;
   position: relative;
-    margin-top: rem(139px);
   &__container{
-    margin-left: rem(-40px);
     display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
   }
   &__background{
-    max-height: rem(652px);
+    height: 100%;
+  }
+  &__background-img{
+    height: 100%;
+    filter: brightness(0.8);
+  }
+  &__title{
+    position: absolute;
+    top: 137px;
+    left: 119px;
+    color: $white;
+    @include tablets{
+      left: 50px;
+    }
+    @include phones{
+      left: 20px;
+    }
   }
   &__list{
     display:flex;
+    position: absolute;
+    top:0;
+    right:0;
+  }
+  &__item{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    margin-right: rem(-2px);
+  }
+  &__item-link{
+    width: rem(102px);
+    position: relative;
+    overflow: hidden;
+  }
+  &__item-name{
+    transform: rotate(90deg);
+    position:absolute;
+    bottom: rem(121px);
+    left: rem(-56px);
+    z-index: 10000;
+    color: $white;
+  }
+  &__img-wrapper{
+    height: 100%;
+    position: relative;
+    width: rem(100px);
+    overflow: hidden;
+    z-index:100;
+  }
+  &__img{
+    height: 100%;
+    position: absolute;
+    right: rem(-410px);
+    width: rem(922px);
+    filter: brightness(0.8);
+  }
+  &__content{
+    width: 0;
+    overflow:hidden;
+    background-color: rgba(51, 53, 55, 0.9);
+    font-size: rem(16px);
+    color: $white;
+    padding-top: rem(31px);
   }
 }
